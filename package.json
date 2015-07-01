@@ -1,0 +1,16 @@
+{
+  "name": "form-post-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "routes": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --harmony app.js"
+  },
+  "author": "Aaron Gray <aaron@hellometa.com>",
+  "license": "ISC"
+}
