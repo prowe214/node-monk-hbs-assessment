@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>show</title>
+  <link rel="stylesheet" href="/public/style.css"> 
+</head>
+<body>
+  <a href="/songs">Go Back</a>
+  <h1>Here's your song!</h1>
+  {{#songs}}
+    <h2>Song Name</h2>
+    <h3>{{songname}}</h3>
+    <h2>Song Length</h2>
+    <h3>{{length}}ms</h3>
+  {{/songs}}
+</body>
+</html>

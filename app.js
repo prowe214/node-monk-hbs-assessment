@@ -1,6 +1,6 @@
-var http = require('http'),
-    router = require('./router'),
-    url = require('url')
+var http = require('http')
+var router = require('./router')
+var url = require('url')
 
 var server = http.createServer(function (req, res) {
   if (req.url === '/favicon.ico') {
@@ -12,7 +12,6 @@ var server = http.createServer(function (req, res) {
   var currentRoute = router.match(path)
   currentRoute.fn(req, res, currentRoute)
 })
-
 server.listen(8080, function (err) {
   if (err) console.log('Doah', err)
   console.log('Woot. A server is running on port 8080')

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>new song</title>
+  <link rel="stylesheet" href="/public/style.css"> 
+</head>
+<body>
+  <a href="/songs">Go Back</a>
+  <h1>Enter a New Song</h1>
+  <form action="/songs" method='POST'>
+    <label for="songname">Song Name</label>
+      <input type="text" name='songname' id='songname'>
+    <label for="length">Song Length</label>
+      <input type="text" name='length' id='length'>
+    <input type="submit" value="make that new song" class='button'>
+  </form>
+</body>
+</html>
